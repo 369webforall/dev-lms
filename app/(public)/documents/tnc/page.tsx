@@ -7,9 +7,9 @@ const Tnc = () => {
         <h2 className="text-2xl font-semibold mb-4">Terms and Conditions</h2>
         <div className="mb-4">
           <p className="mb-2">
-            Welcome, if you continue to browse and use this website you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern stackhub relationship with you in relation to this website.
+            Welcome, if you continue to browse and use this website you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern e5code relationship with you in relation to this website.
           </p>
-          <p>The term &apos;stackhub&apos; or &apos;us&apos; or &apos;we&apos; refers to the owner of the website. The term &apos;you&apos; refers to the user or viewer of our website.</p>
+          <p>The terms, e5code, or us or we refers to the owner of the website. The term you refers to the user or viewer of our website.</p>
           <p>The use of this website is subject to the following terms of use:</p>
           <ol className="list-decimal list-inside space-y-4">
             <li>The content of the pages of this website is for your general information and use only. It is subject to change without notice.</li>
@@ -22,12 +22,12 @@ const Tnc = () => {
             <li>All trademarks reproduced in this website which is not the property of, or licensed to, the operator is acknowledged on the website.</li>
             <li>Unauthorized use of this website by you may give rise to a claim for damages and/or be a criminal offense. From time to time this website may also include links to other websites.</li>
             <li>These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We take no responsibility for the content of the linked website(s).</li>
-            <li>You may not create a link to this website from another website or document without &apos;stackhub&apos; prior consent. Your use of this website and any dispute arising out of such use of the website is subject to the laws of USA or other regulatory authority.</li>
+            <li>You may not create a link to this website from another website or document without, <strong>e5code</strong> prior consent. Your use of this website and any dispute arising out of such use of the website is subject to the laws of USA or other regulatory authority.</li>
             <li>This website is registered in the USA, with an address in Oklahoma state, and is owned by a US citizen.</li>
           </ol>
         </div>
         </div>
-        </div>
+       </div>
 
   )
 }

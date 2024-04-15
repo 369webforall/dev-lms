@@ -1,24 +1,22 @@
 // components/AdminDashboard.js
 import React from 'react';
-import AdminHeader from './AdminHeader';
+import prisma from '@/prisma/client';
+import { notFound } from 'next/navigation';
+const AdminDashboard = async () => {
+const users = await prisma.user.findMany()
+if(!users) notFound();
 
-const AdminDashboard = () => {
-  // Mock data for counts (replace this with actual data fetching)
-  const totalStudents = 150;
-  const totalAdmissions = 50;
-  const totalCourses = 10;
-  const totalPayments = 500;
+  const totalUser = users.filter((user)=>user.role === "USER")
+  const totalStudent = users.filter((user)=>user.role === "STUDENT")
 
   return (
     <div>
       <div className="container mx-auto mt-8">
         <h2 className='text-2xl font-semibold mb-3'>Dashboard</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <DashboardCard title="Total Students" count={totalStudents} />
-          <DashboardCard title="Total Admissions" count={totalAdmissions} />
-          <DashboardCard title="Total Courses" count={totalCourses} />
-          <DashboardCard title="Total Payments" count={totalPayments} />
-        </div>
+          <DashboardCard title="Total Users" count={totalUser.length} />
+          <DashboardCard title="Total Students" count={totalStudent.length} />
+         </div>
       </div>
     </div>
   );

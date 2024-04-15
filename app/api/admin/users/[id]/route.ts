@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { UpdateRoleSchema } from "@/lib/LoginFormValidation";
+import { UpdateRoleSchema } from "@/lib/FormValidation";
 import prisma from "@/prisma/client";
 
 export async function PATCH(request:NextRequest, {params}:{params:{id:string}}){

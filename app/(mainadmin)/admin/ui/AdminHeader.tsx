@@ -7,10 +7,10 @@ const AdminHeader = () => {
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-white text-2xl font-semibold">Admin Panel</h1>
         <nav>
-            <Link href="" className='text-gray-300 hover:text-white px-3 py-2'>Dashboard</Link>
-            <Link href="" className='text-gray-300 hover:text-white px-3 py-2'>Users</Link>
-            <Link href="" className='text-gray-300 hover:text-white px-3 py-2'>Courses</Link>
-            <Link href="" className='text-gray-300 hover:text-white px-3 py-2'>Settings</Link>
+            <Link href="/admin" className='text-gray-300 hover:text-white px-3 py-2'>Dashboard</Link>
+            <Link href="/admin/users" className='text-gray-300 hover:text-white px-3 py-2'>Users</Link>
+            <Link href="/admin/admission" className='text-gray-300 hover:text-white px-3 py-2'>Students</Link>
+            
         </nav>
       </div>
     </header>

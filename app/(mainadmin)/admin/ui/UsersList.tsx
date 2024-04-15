@@ -1,5 +1,6 @@
 import React from 'react'
 import { User } from '@prisma/client'
+import Link from 'next/link'
 interface AdmissionProps {
     admission:User[]
 }
@@ -34,7 +35,7 @@ const UsersList = ({admission}:AdmissionProps) => {
       <TableCell>{user.email}</TableCell>
       <TableCell>{user.role}</TableCell>
       <TableCell className='flex gap-2'>
-<Button variant="ghost">Update</Button>
+<Button variant="ghost"><Link href={`/admin/users/${user.id}`}>Update</Link></Button>
 <Button variant="ghost">Delete</Button>
       </TableCell>
     </TableRow>

@@ -16,6 +16,7 @@ import {
   
 import { Button } from '@/components/ui/button'
 const AdmissionList = ({admission}:AdmissionProps) => {
+  const students = admission.filter((student)=>student.role === 'STUDENT')
   return (
     <Table>
   <TableCaption>List of Students</TableCaption>
@@ -28,7 +29,7 @@ const AdmissionList = ({admission}:AdmissionProps) => {
     </TableRow>
   </TableHeader>
   <TableBody>
-    {admission.map((user)=>(
+    {students.map((user)=>(
       <TableRow key={user.id}>
       <TableCell>{user.name}</TableCell>
       <TableCell>{user.email}</TableCell>

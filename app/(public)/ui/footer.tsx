@@ -8,9 +8,9 @@ const Footer = () => {
     
      
             <div> <Link href='/' className='flex items-center gap-1 mr-4'>
-            <h1 className='text-orange-600 font-semibold'>stackhub coaching</h1>
+            <h1 className='text-orange-600 font-semibold'>e5code</h1>
         </Link></div>
-        <p>All rights reserved. @{new Date().getFullYear()} stackHub coaching</p>
+        <p>All rights reserved. @{new Date().getFullYear()} e5code</p>
         <div className="flex gap-4 items-center">
             <Link href='/documents/tnc'>T&C</Link>
             <Link href='/documents/privacy-policy'>Privacy-Policy</Link>

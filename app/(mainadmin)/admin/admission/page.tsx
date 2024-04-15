@@ -6,7 +6,7 @@ const AdmissionPage = async () => {
   const users = await prisma.user.findMany();
   if(!users) notFound();
   return (
-    <div>
+    <div className='container mx-auto'>
         <AdmissionList admission={users}/>
     </div>
   )
