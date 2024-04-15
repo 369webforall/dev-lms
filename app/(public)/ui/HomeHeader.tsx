@@ -44,9 +44,12 @@ const HomeHeader = () => {
           )}
 
           {session && (
+            <div className="flex gap-4 items-center">
+              <p>{session.user.name}</p>
             <Button variant="destructive" onClick={() => logout()}>
               Logout
             </Button>
+            </div>
           )}
         </nav>
       </div>
