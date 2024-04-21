@@ -11,7 +11,9 @@ const EditUser = async({params}:Props) => {
     }})
     if(!user) notFound();
   return (
+    <div className='max-w-2xl mx-auto'>
     <UserUpdateForm user={user} />
+    </div>
   )
 }
 
